@@ -1,4 +1,4 @@
 export default function hello() {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+  const lob = 'loblaw';
   console.log('Hello, World!');
 }

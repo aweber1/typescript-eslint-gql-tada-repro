@@ -15,7 +15,7 @@
             // everything is ok.
             "schema": "./generated/schema.graphql",
             // "schema": "https://swapi-graphql.netlify.app/.netlify/functions/index",
-            "tadaOutputLocation": "./src/graphql-env.d.ts"
+            "tadaOutputLocation": "./generated/graphql-env.d.ts"
           }
         ]
       }
