@@ -1,0 +1,24 @@
+{
+  "name": "typescript-eslint-gql-tada-repro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ./src/**/*.{ts,tsx}",
+    "generate:schema": "tsx ./scripts/generate-schema.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gql.tada": "^1.8.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.0",
+    "@gql.tada/cli-utils": "^1.6.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.5.1",
+    "eslint": "^8.57.0",
+    "globals": "^15.9.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0"
+  }
+}

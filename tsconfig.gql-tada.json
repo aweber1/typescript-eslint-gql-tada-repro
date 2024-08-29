@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* For GraphQL type gen */
+    "plugins": [
+      {
+        "name": "gql.tada/ts-plugin",        
+        "schemas": [
+          {
+            "name": "swapi",
+            // This is the issue between tseslint and gql-tada
+            // If we use a path _and_ typescript-eslint `projectService: true`,
+            // the lint process will not exit.
+            // If we use a URL _and_ typescript-eslint `projectService: true`, everything is ok.
+            // If we use a path or URL and "legacy" typescript-eslint `project` set to the tsconfig.json path,
+            // everything is ok.
+            "schema": "./generated/schema.graphql",
+            // "schema": "https://swapi-graphql.netlify.app/.netlify/functions/index",
+            "tadaOutputLocation": "./src/graphql-env.d.ts"
+          }
+        ]
+      }
+    ]
+  }
+}
